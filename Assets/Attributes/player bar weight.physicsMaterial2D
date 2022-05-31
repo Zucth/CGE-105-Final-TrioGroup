@@ -6,6 +6,6 @@ PhysicsMaterial2D:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Bouncing_Balls_Attribute
-  friction: 0.48
-  bounciness: 1.2
+  m_Name: player bar weight
+  friction: 5
+  bounciness: 0.2

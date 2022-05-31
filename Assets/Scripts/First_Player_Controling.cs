@@ -11,7 +11,7 @@ public class First_Player_Controling : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        rb2D = gameObject.AddComponent<Rigidbody2D>();
+        rb2D = gameObject.GetComponent<Rigidbody2D>();
     }
     // Update is called once per frame
     void Update()
@@ -62,18 +62,19 @@ public class First_Player_Controling : MonoBehaviour
 
     private void FixedUpdate()
     {
-        /* if (Input.GetKey(KeyCode.A))
-             rb2D.AddForce(Vector3.left * player1_Speed);
+         if (Input.GetKey(KeyCode.A))
+             rb2D.AddForce(Vector3.left * player1_Speed * 2);
 
          if (Input.GetKey(KeyCode.D))
-             rb2D.AddForce(Vector3.right * player1_Speed);
+             rb2D.AddForce(Vector3.right * player1_Speed * 2);
 
          if (Input.GetKey(KeyCode.W))
-             rb2D.AddForce(Vector3.up * player1_Speed);
+             rb2D.AddForce(Vector3.up * player1_Speed * 3);
 
          if (Input.GetKey(KeyCode.S))
-             rb2D.AddForce(Vector3.down * player1_Speed); */
+             rb2D.AddForce(Vector3.down * player1_Speed * 5); 
 
+        /*
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
 
