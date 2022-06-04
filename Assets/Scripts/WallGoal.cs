@@ -69,8 +69,8 @@ public class WallGoal : MonoBehaviour
             {
                 timeStart -= Time.deltaTime;
             }
-            CenterText.text = "Ready?";
-            yield return new WaitForSeconds(1f);
+            //CenterText.text = "Ready?";
+            //yield return new WaitForSeconds(1f);
             CenterText.text = " ";
 
             //Instantiate(player1, spawnPoint1.position, spawnPoint1.rotation);
