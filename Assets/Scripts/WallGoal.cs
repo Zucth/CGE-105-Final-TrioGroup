@@ -75,9 +75,13 @@ public class WallGoal : MonoBehaviour
             //Instantiate(player2, spawnPoint2.position, spawnPoint2.rotation);
             //Instantiate(ball1, spawnPoint3.position, spawnPoint3.rotation);
 
+            /*
             player1.transform.position = spawnPoint1.position;
             player2.transform.position = spawnPoint2.position;
-            ball1.transform.position = spawnPoint3.position;
+            ball1.transform.position = spawnPoint3.position; */
+
+            player1.transform.position = new Vector3(-8, 0, 0);
+            player1.transform.position = new Vector3(8, 0, 0);
 
 
         }
