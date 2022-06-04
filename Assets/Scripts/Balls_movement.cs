@@ -9,7 +9,7 @@ public class Balls_movement : MonoBehaviour
     [SerializeField] private float speed = 10f;
     [SerializeField] private float max_speed = 2f;
     private float x;
-    private float y;
+    //private float y;
     //public GameObject BallDissapear;
 
 
