@@ -69,6 +69,8 @@ public class WallGoal : MonoBehaviour
             {
                 timeStart -= Time.deltaTime;
             }
+            CenterText.text = "Ready?";
+            yield return new WaitForSeconds(1f);
             CenterText.text = " ";
 
             //Instantiate(player1, spawnPoint1.position, spawnPoint1.rotation);
@@ -76,12 +78,13 @@ public class WallGoal : MonoBehaviour
             //Instantiate(ball1, spawnPoint3.position, spawnPoint3.rotation);
 
             /*
-            player1.transform.position = spawnPoint1.position;
+            player1.transform.position = spawnPoint1.transform.position;
             player2.transform.position = spawnPoint2.position;
             ball1.transform.position = spawnPoint3.position; */
 
-            player1.transform.position = new Vector3(-8, 0, 0);
-            player1.transform.position = new Vector3(8, 0, 0);
+            //player1.transform.position = new Vector3(-8, 0, 0);
+
+            player1.transform.position = new Vector2(0, 0);
 
 
         }
