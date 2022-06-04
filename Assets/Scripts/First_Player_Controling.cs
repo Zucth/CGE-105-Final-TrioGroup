@@ -2,10 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class First_Player_Controling : MonoBehaviour
 {
     [SerializeField] private float player1_Speed = 2.5f;  //allows us to be able to change speed in Unity
     private Rigidbody2D rb2D;
+
     //private Vector2 jumpHeight;
 
     // Use this for initialization
