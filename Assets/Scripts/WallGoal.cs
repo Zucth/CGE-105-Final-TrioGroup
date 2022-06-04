@@ -64,6 +64,7 @@ public class WallGoal : MonoBehaviour
         //do the count down 5 4 3 2 1.. remove number.
         //create new paddle and ball at the position (change to set ball and paddle at the position)
         {
+
             CenterText.text = timeStart.ToString();
             while (timeStart > 0)
             {
@@ -84,7 +85,9 @@ public class WallGoal : MonoBehaviour
 
             //player1.transform.position = new Vector3(-8, 0, 0);
 
-            player1.transform.position = new Vector2(0, 0);
+            player1.transform.position = spawnPoint1.position;
+            player2.transform.position = spawnPoint2.position;
+            ball1.transform.position = spawnPoint3.position;
 
 
         }
